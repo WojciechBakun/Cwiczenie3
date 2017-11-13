@@ -82,7 +82,7 @@ double Calka(Dane dane) {
     double calka = 0, dt = 0, dpole = 0;
     for (int i=1; i < dane.size()-1; i++)
     {
-        dt = dane[i+1].x - dane[i].t;
+        dt = dane[i+1].t - dane[i].t;
         dpole = (dane[i].x + dane[i+1].x) * dt / 2;
         calka = calka + dpole;
     }
